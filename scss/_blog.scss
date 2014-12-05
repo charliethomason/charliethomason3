@@ -1,0 +1,159 @@
+.blog-index {
+	@include mid400;
+	h2 {
+		@include typewriter;
+		color:$darkgray;
+		font-size:32px;
+		padding:20px 0 0;
+		text-align:center;
+		a {
+			color:$darkgray;
+			&:hover, &:focus {
+				color:$red;
+			}
+		}
+	}
+	.blog-posts {
+		padding:20px 0;
+	}
+}
+article.blog-item {
+	@include clearfix;
+	border-top:1px solid $litegray;
+	padding:10px 0;
+	&:first-child {
+		border-top:medium none;
+		padding-top:0;
+	}
+	h3 {
+		@include lora;
+		font-size:20px;
+		font-weight:bold;
+		line-height:26px;
+		padding-bottom:2px;
+		@media all and (max-width:599px) {
+			font-size:18px;
+			line-height:24px;
+		}
+		a {
+			&:hover,&:focus {
+				color:$medgray;
+			}
+		}
+	}
+	a.blog-thumb {
+		border:2px solid $offwhite;
+		display:block;
+		float:left;
+		margin-right:8px;
+		&:hover,&:focus {
+			border-color:$red;
+		}
+		img {
+			display: block;
+			height:auto;
+			max-width:100%;
+		}
+		@media all and (max-width:599px) {
+			border:none;
+			max-width:80px;
+		}
+	}
+	.info {
+		color:$darkgray;
+		display:block;
+		font-size:16px;
+		line-height:20px;
+		padding:0 0 5px;
+		@media all and (max-width:599px) {
+			font-size:14px;
+			line-height:18px;
+		}
+	}
+	.subjects {
+		color:$medgray;
+		li {
+			display:inline;
+			a {
+				color:$medgray;
+				font-size:16px;
+				line-height:20px;
+				text-transform: lowercase;
+				&:hover,&:focus {
+					color:$red;
+				}
+				@media all and (max-width:599px) {
+					font-size:14px;
+					line-height:18px;
+				}
+			}
+		}
+	}
+}
+article.blog-single {
+	@include clearfix;
+	.info {
+		padding:20px;
+		text-align:center;
+		h2 {
+			@include typewriter;
+			font-size:24px;
+			line-height: 30px;
+			text-align:center;
+			a {
+				&:hover, &:focus {
+					color:$medgray;
+				}
+			}
+		}
+		.publish {
+			color:$medgray;
+			font-size:16px;
+			font-weight:bold;
+			padding:5px 0 0;
+		}
+		span.category {
+			a {
+				color:$medgray;
+				&:hover, &:focus {
+					color:$red;
+				}
+			}
+		}
+	}
+	.the-content {
+		@include lora;
+		font-size:16px;
+		line-height:24px;
+		padding:0 0 20px;
+		h3 {
+			@include mid500;
+			border-bottom:2px solid $red;
+			color:$red;
+			font-size:18px;
+			font-weight:bold;
+			line-height:24px;
+			padding:20px 0 5px;
+		}
+		ul {
+			@include mid500;
+			list-style:square outside;
+			padding:10px 0 10px 20px;
+		}
+		ol {
+			@include mid500;
+			list-style:upper-roman outside;
+			padding:10px 0 10px 25px;
+		}
+		p {
+			@include mid500;
+			padding:10px 0;
+		}
+		.post-image {
+			img {
+				height:auto;
+				max-width:100%;
+			}
+		}
+	}
+}

@@ -1,0 +1,100 @@
+h2.hashtag {
+	text-transform:lowercase;
+	a:before {
+		content: "#";
+	}
+}
+article.art-single {
+	.info {
+		padding:20px;
+		text-align:center;
+		h2 {
+			@include typewriter;
+			color:$medgray;
+			font-size:24px;
+			line-height: 30px;
+			text-align:center;
+		}
+		.publish {
+			color:$medgray;
+			font-size:16px;
+			font-weight:bold;
+			padding:5px 0 0;
+		}
+	}
+	.description {
+		@include lora;
+		color:$darkgray;
+		font-size:16px;
+		line-height:24px;
+		padding:0 0 10px;
+		.post-image {
+			@include clearfix;
+			text-align:center;
+			a {
+				img {
+					display: block;
+					height:auto;
+					max-width:100%;
+				}
+			}
+		}
+		.gallery {
+			@include clearfix;
+			@include mid500;
+			.gallery-item {
+				float:left;
+				width:20%;
+				.gallery-icon {
+					a {
+						display:block;
+						img {
+							display: block;
+							height:auto;
+							max-width:100%;
+						}
+					}
+				}
+				.gallery-caption {
+					display:none;
+				}
+				@media all and (max-width:450px) {
+					width:25%;
+				}
+				@media all and (max-width:360px) {
+					width:33.3334%;
+				}
+			}
+			br {
+				@media all and (max-width:450px) {
+					clear:none !important;
+					display:none !important;
+				}
+			}
+		}
+		p {
+			@include mid500;
+			padding:10px 0;
+		}
+	}
+	.meta {
+		@include mid500;
+		border-top:1px solid $litegray;
+		padding:20px 0;
+		text-align:center;
+		.buy-link {
+			padding:0 0 20px;
+		}
+		.subjects {
+			color:$medgray;
+			padding:0 0 20px;
+			a {
+				color:$medgray;
+				text-transform: lowercase;
+				&:hover,&:focus {
+					color:$red;
+				}
+			}
+		}
+	}
+}

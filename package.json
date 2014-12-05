@@ -1,0 +1,18 @@
+{
+  "name": "charliethomason3",
+  "version": "0.0.0",
+  "description": "CharlieThomason.com WordPress Theme v3.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-sass": "^0.7.4",
+    "grunt-contrib-cssmin": "^0.10.0",
+    "grunt-ftp-deploy": "^0.1.7",
+    "grunt-contrib-copy": "^0.6.0"
+  }
+}
