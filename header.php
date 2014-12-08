@@ -4,6 +4,7 @@
 <meta charset="<?php bloginfo( 'charset' ); ?>" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <title><?php bloginfo('name'); ?> <?php wp_title ('|'); ?></title>
+<link rel="icon" href="<?php bloginfo('template_directory'); ?>/images/favicon.ico">
 <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 <?php wp_head(); ?>
 </head>

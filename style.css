@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*
 Theme Name: Charlie Thomason 3.0
 Theme URI: http://www.charliethomason.com
@@ -89,7 +90,7 @@ input {
 
 body {
   font-family: Lato, 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  background: url("images/argyle.jpg") repeat scroll 0 0 black;
+  background: url("images/argyle.jpg") repeat scroll 0 0 #000;
 }
 
 main {
@@ -191,7 +192,7 @@ nav#main-nav ul li {
   }
 }
 nav#main-nav ul li a {
-  border: 2px solid #339933;
+  border: 2px solid #393;
   border-radius: 20px;
   color: #fff;
   font-family: Lato, 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -207,11 +208,11 @@ nav#main-nav ul li a:hover, nav#main-nav ul li a:focus {
 }
 nav#main-nav ul li a:hover {
   background-color: #fff;
-  border-color: #222222;
-  color: #222222;
+  border-color: #222;
+  color: #222;
   text-shadow: none;
-  -webkit-box-shadow: 0 3px 0 #222222;
-  box-shadow: 0 3px 0 #222222;
+  -webkit-box-shadow: 0 3px 0 #222;
+  box-shadow: 0 3px 0 #222;
 }
 @media all and (max-width: 599px) {
   nav#main-nav ul li a {
@@ -222,11 +223,11 @@ nav#main-nav ul li a:hover {
 }
 nav#main-nav ul li.active a {
   background-color: #fff;
-  border-color: #222222;
-  color: #222222;
+  border-color: #222;
+  color: #222;
   text-shadow: none;
-  -webkit-box-shadow: 0 3px 0 #222222;
-  box-shadow: 0 3px 0 #222222;
+  -webkit-box-shadow: 0 3px 0 #222;
+  box-shadow: 0 3px 0 #222;
 }
 nav#main-nav ul li#home-nav {
   margin-left: 0;
@@ -282,8 +283,8 @@ a {
 }
 a.btn {
   font-family: Lato, 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  background-color: #339933;
-  border: 2px solid #222222;
+  background-color: #393;
+  border: 2px solid #222;
   border-radius: 20px;
   color: #fff;
   display: inline-block;
@@ -291,14 +292,14 @@ a.btn {
   font-weight: bold;
   line-height: 1;
   padding: 10px 20px;
-  -webkit-box-shadow: 0 2px 0 #222222;
-  box-shadow: 0 2px 0 #222222;
+  -webkit-box-shadow: 0 2px 0 #222;
+  box-shadow: 0 2px 0 #222;
 }
 a.btn:hover, a.btn:focus {
   text-decoration: none;
 }
 a.btn.secondary {
-  background-color: #666666;
+  background-color: #666;
 }
 a.btn.secondary:hover, a.btn.secondary:focus {
   background-color: #b00000;
@@ -321,7 +322,7 @@ a.btn:hover, a.btn:focus {
   }
 }
 a:hover, a:focus {
-  color: #666666;
+  color: #666;
 }
 
 img.bigpic {
@@ -372,12 +373,12 @@ blockquote {
   font-family: Lora, Georgia, 'Times New Roman', Times, serif;
   margin: 0 auto;
   max-width: 500px;
-  color: #666666;
+  color: #666;
   font-size: 18px;
   font-style: italic;
   line-height: 27px;
   padding: 20px 6%;
-  quotes: "\201C" "\201D" "\2018" "\2019";
+  quotes: "“" "”" "‘" "’";
 }
 @media all and (max-width: 540px) {
   blockquote {
@@ -385,7 +386,7 @@ blockquote {
   }
 }
 blockquote:before, blockquote:after {
-  color: #339933;
+  color: #393;
   font-size: 40px;
   font-weight: bold;
   line-height: 10px;
@@ -427,16 +428,16 @@ nav.page-nav .next {
 }
 nav.page-nav a {
   background: #fff;
-  border: 2px solid #222222;
+  border: 2px solid #222;
   border-radius: 15px;
-  color: #222222;
+  color: #222;
   display: inline-block;
   font-size: 14px;
   font-weight: bold;
   line-height: 20px;
   padding: 5px 15px;
-  -webkit-box-shadow: 0 3px 0 #222222;
-  box-shadow: 0 3px 0 #222222;
+  -webkit-box-shadow: 0 3px 0 #222;
+  box-shadow: 0 3px 0 #222;
 }
 nav.page-nav a:hover, nav.page-nav a:focus {
   text-decoration: none;
@@ -447,7 +448,7 @@ nav.page-nav a:hover, nav.page-nav a:focus {
 }
 
 hr {
-  border-color: #aaaaaa transparent transparent;
+  border-color: #aaa transparent transparent;
   border-style: solid;
   border-width: 1px 0 0;
   margin: 20px auto 10px;
@@ -460,7 +461,7 @@ hr {
 }
 
 .about-rf {
-  color: #666666;
+  color: #666;
   font-size: 14px;
   line-height: 20px;
   padding: 10px 0;
@@ -482,7 +483,7 @@ hr {
 }
 #homepage article.intro h2 {
   font-family: 'Special Elite', 'American Typewriter', Typewriter, monospace;
-  color: #222222;
+  color: #222;
   font-size: 26px;
   line-height: 30px;
   padding: 20px 0 10px;
@@ -530,7 +531,7 @@ hr {
 }
 #homepage #home-recent {
   background: #e6e6e6;
-  border-top: 1px solid #aaaaaa;
+  border-top: 1px solid #aaa;
 }
 #homepage #home-recent:before, #homepage #home-recent:after {
   content: " ";
@@ -544,7 +545,7 @@ hr {
   width: 50%;
 }
 #homepage #home-recent .the-latest.recent-art {
-  border-right: 1px solid #aaaaaa;
+  border-right: 1px solid #aaa;
   float: left;
 }
 #homepage #home-recent .the-latest.recent-blog {
@@ -552,7 +553,7 @@ hr {
 }
 @media all and (max-width: 599px) {
   #homepage #home-recent .the-latest.recent-blog {
-    border-top: 1px solid #aaaaaa;
+    border-top: 1px solid #aaa;
   }
 }
 @media all and (max-width: 599px) {
@@ -564,12 +565,12 @@ hr {
 }
 #homepage #home-recent .the-latest h2 {
   font-family: 'Special Elite', 'American Typewriter', Typewriter, monospace;
-  color: #222222;
+  color: #222;
   font-size: 20px;
   text-align: center;
 }
 #homepage #home-recent .the-latest h2 a {
-  color: #222222;
+  color: #222;
 }
 #homepage #home-recent .the-latest h2 a:hover, #homepage #home-recent .the-latest h2 a:focus {
   color: #b00000;
@@ -603,20 +604,20 @@ article.art-single .info {
 }
 article.art-single .info h2 {
   font-family: 'Special Elite', 'American Typewriter', Typewriter, monospace;
-  color: #666666;
+  color: #666;
   font-size: 24px;
   line-height: 30px;
   text-align: center;
 }
 article.art-single .info .publish {
-  color: #666666;
+  color: #666;
   font-size: 16px;
   font-weight: bold;
   padding: 5px 0 0;
 }
 article.art-single .description {
   font-family: Lora, Georgia, 'Times New Roman', Times, serif;
-  color: #222222;
+  color: #222;
   font-size: 16px;
   line-height: 24px;
   padding: 0 0 10px;
@@ -696,7 +697,7 @@ article.art-single .description p {
 article.art-single .meta {
   margin: 0 auto;
   max-width: 500px;
-  border-top: 1px solid #aaaaaa;
+  border-top: 1px solid #aaa;
   padding: 20px 0;
   text-align: center;
 }
@@ -709,11 +710,11 @@ article.art-single .meta .buy-link {
   padding: 0 0 20px;
 }
 article.art-single .meta .subjects {
-  color: #666666;
+  color: #666;
   padding: 0 0 20px;
 }
 article.art-single .meta .subjects a {
-  color: #666666;
+  color: #666;
   text-transform: lowercase;
 }
 article.art-single .meta .subjects a:hover, article.art-single .meta .subjects a:focus {
@@ -731,13 +732,13 @@ article.art-single .meta .subjects a:hover, article.art-single .meta .subjects a
 }
 .blog-index h2 {
   font-family: 'Special Elite', 'American Typewriter', Typewriter, monospace;
-  color: #222222;
+  color: #222;
   font-size: 32px;
   padding: 20px 0 0;
   text-align: center;
 }
 .blog-index h2 a {
-  color: #222222;
+  color: #222;
 }
 .blog-index h2 a:hover, .blog-index h2 a:focus {
   color: #b00000;
@@ -747,7 +748,7 @@ article.art-single .meta .subjects a:hover, article.art-single .meta .subjects a
 }
 
 article.blog-item {
-  border-top: 1px solid #aaaaaa;
+  border-top: 1px solid #aaa;
   padding: 10px 0;
 }
 article.blog-item:before, article.blog-item:after {
@@ -775,7 +776,7 @@ article.blog-item h3 {
   }
 }
 article.blog-item h3 a:hover, article.blog-item h3 a:focus {
-  color: #666666;
+  color: #666;
 }
 article.blog-item a.blog-thumb {
   border: 2px solid #f1f1f1;
@@ -798,7 +799,7 @@ article.blog-item a.blog-thumb img {
   }
 }
 article.blog-item .info {
-  color: #222222;
+  color: #222;
   display: block;
   font-size: 16px;
   line-height: 20px;
@@ -811,13 +812,13 @@ article.blog-item .info {
   }
 }
 article.blog-item .subjects {
-  color: #666666;
+  color: #666;
 }
 article.blog-item .subjects li {
   display: inline;
 }
 article.blog-item .subjects li a {
-  color: #666666;
+  color: #666;
   font-size: 16px;
   line-height: 20px;
   text-transform: lowercase;
@@ -850,16 +851,16 @@ article.blog-single .info h2 {
   text-align: center;
 }
 article.blog-single .info h2 a:hover, article.blog-single .info h2 a:focus {
-  color: #666666;
+  color: #666;
 }
 article.blog-single .info .publish {
-  color: #666666;
+  color: #666;
   font-size: 16px;
   font-weight: bold;
   padding: 5px 0 0;
 }
 article.blog-single .info span.category a {
-  color: #666666;
+  color: #666;
 }
 article.blog-single .info span.category a:hover, article.blog-single .info span.category a:focus {
   color: #b00000;
@@ -930,7 +931,7 @@ article.blog-single.page .info h2 {
   line-height: 30px;
 }
 article.blog-single.page .info h2 a {
-  color: #222222;
+  color: #222;
 }
 article.blog-single.page .info h2 a:hover, article.blog-single.page .info h2 a:focus {
   color: #b00000;
@@ -981,10 +982,12 @@ article.blog-single.page.shop ol.shop-grid li h3 {
 article.blog-single.page.shop ol.shop-grid li .product,
 article.blog-single.page.shop ol.shop-grid li .size,
 article.blog-single.page.shop ol.shop-grid li .seller {
-  color: #666666;
+  color: #666;
   font-size: 14px;
   line-height: 20px;
 }
 article.blog-single.page.shop ol.shop-grid li .seller {
   padding: 0 0 10px;
 }
+
+/*# sourceMappingURL=style.css.map */

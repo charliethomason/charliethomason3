@@ -66,7 +66,7 @@ module.exports = function(grunt) {
 				},
 				src: '_prod/charliethomason',
 				dest: '/public_html/wp-content/themes/charliethomason3',
-				exclusions: ['.DS_Store', 'Thumbs.db', '**/.DS_Store', '**/Thumbs.db']
+				exclusions: ['.DS_Store', 'Thumbs.db', '**/.DS_Store', '**/Thumbs.db', 'style.css.map']
 			}
 		}
 	});
