@@ -1,6 +1,3 @@
-@mixin lato {
-	font-family:Lato, 'Helvetica Neue', Helvetica, Arial, sans-serif;
-}
 @mixin lora {
 	font-family:Lora, Georgia, 'Times New Roman', Times, serif;
 }
@@ -47,10 +44,8 @@
 }
 
 $offwhite: #f1f1f1;
-$green: #393;
-$darkgreen:#060;
+$green: #507d2a;
 $red: #b00000;
-$darkred:#600;
 $darkgray: #222;
 $medgray: #666;
 $litegray: #aaa;

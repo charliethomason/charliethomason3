@@ -10,26 +10,27 @@
 </head>
 <body>
 
-<header>
-	<h1><a href="<?php echo get_option('home'); ?>"><img src="<?php bloginfo('template_directory'); ?>/images/ct-logo-01.png" alt="Charlie Thomason"></a></h1>
+<header id="header">
+	<div class="headwrap">
+		<h1>
+			<a href="<?php echo get_option('home'); ?>"><span class="first-name">Charlie</span> <span class="last-name">Thomason</span></a>
+		</h1>
 
-	<aside id="social">
-		<div>
+		<aside id="social">
 			<ul>
-				<li><a href="http://twitter.com/charliethomason" alt="Twitter" rel="nofollow" target="_blank" title="Twitter"><img src="<?php bloginfo('template_directory'); ?>/images/twitter01.png" alt="Twitter"></a></li>
-				<li><a href="http://instagram.com/charliethomason" alt="Instagram" rel="nofollow" target="_blank" title="Instagram"><img src="<?php bloginfo('template_directory'); ?>/images/instagram01.png" alt="Instagram"></a></li>
+				<li><a href="http://twitter.com/charliethomason" alt="Twitter" rel="nofollow" target="_blank" title="Twitter"><img src="<?php bloginfo('template_directory'); ?>/images/twitter02.png" alt="Twitter"></a></li>
+				<li><a href="http://instagram.com/charliethomason" alt="Instagram" rel="nofollow" target="_blank" title="Instagram"><img src="<?php bloginfo('template_directory'); ?>/images/instagram02.png" alt="Instagram"></a></li>
 			</ul>
-		</div>
-	</aside>
-
+		</aside>
+	</div>
 </header>
 
-<main>
+<main id="main">
 
 	<nav id="main-nav">
 		<ul>
-			<li id="home-nav"<?php if (is_front_page()) { ?> class="active"<?php } ?>>
-				<a href="<?php echo get_option('home'); ?>"><span>Home</span></a>
+			<li<?php if (is_front_page()) { ?> class="active"<?php } ?>>
+				<a href="<?php echo get_option('home'); ?>">Home</a>
 			</li>
 			<li<?php if (is_page_template('about.php')) { ?> class="active"<?php } ?>>
 				<a href="/about">About</a>

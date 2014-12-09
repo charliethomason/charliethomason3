@@ -1,13 +1,24 @@
 #homepage {
+	#intro-wrap {
+		@include clearfix;
+		padding:0 10px;
+	}
+	#home-photo {
+		float:left;
+		width:33.8%;
+		img {
+			max-width:100%;
+		}
+	}
 	article.intro {
-		@include mid500;
+		float:right;
+		padding-left:10px;
+		width:66.1%;
 		h2 {
 			@include typewriter;
 			color:$darkgray;
 			font-size:26px;
 			line-height: 30px;
-			padding:20px 0 10px;
-			text-align: center;
 			@media all and (max-width:599px) {
 				font-size:22px;
 				line-height:26px;
@@ -19,50 +30,22 @@
 			line-height:24px;
 		}
 		.button-row {
-			padding:10px 0 20px;
+			padding:10px 0 0;
 			text-align:center;
-		}
-		&.art-item {
-			border-top:none;
-			padding:0;
-			@media all and (max-width:599px) {
-				margin:0;
-			}
-		}
-		&.blog-item {
-			border-top:none;
-			padding:0;
-			h3 {
-				text-align:center;
-			}
-			@media all and (max-width:599px) {
-				margin:0;
-				h3 {
-					font-size:18px;
-					line-height:24px;
-				}
-			}
 		}
 	}
 	#home-recent {
 		@include clearfix;
-		background:$xlitegray;
-		border-top:1px solid $litegray;
 		.the-latest {
 			padding:10px;
 			width:50%;
 			&.recent-art {
-				border-right:1px solid $litegray;
 				float:left;
 			}
 			&.recent-blog {
 				float:right;
-				@media all and (max-width:599px) {
-					border-top:1px solid $litegray;
-				}
 			}
 			@media all and (max-width:599px) {
-				border-right:none;
 				float:none;
 				width:100%;
 			}
@@ -70,7 +53,6 @@
 				@include typewriter;
 				color:$darkgray;
 				font-size:20px;
-				text-align:center;
 				a {
 					color:$darkgray;
 					&:hover, &:focus {
@@ -85,7 +67,7 @@
 			.blog-item {
 				border-top:medium none;
 				a.blog-thumb {
-					border-color:$xlitegray;
+					border-color:$litegray;
 					&:hover, &:focus {
 						border-color:$red;	
 					}
