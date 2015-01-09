@@ -68,3 +68,7 @@ em, i {
 input {
 	-webkit-appearance:none;
 }
+body {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}

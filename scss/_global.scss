@@ -5,16 +5,16 @@ body {
 	background: $green;
 	width:100%;
 	.headwrap {
-		@include clearfix;
 		margin:0 auto;
 		max-width:960px;
 		padding:15px 0 10px;
 		width:100%;
 	}
 	h1 {
-		float:left;
 		font-weight:normal;
 		line-height:1;
+		margin:0 auto;
+		text-align:center;
 		a {
 			@include nounderline;
 			color:#fff;
@@ -37,42 +37,17 @@ body {
 		}
 	}
 }
-#social {
-	float:right;
-	padding:5px 0 0;
-	text-align:right;
-	ul {
-		li {
-			display:inline-block;
-			&:first-child {
-				margin-right:5px;
-			}
-			a {
-				@include nounderline;
-				display:block;
-			}
-		}
-	}
-}
-#main {
-	@include lora;
-	margin:0 auto;
-	max-width:960px;
-	width:100%;
-}
 #main-nav {
-	float:left;
-	max-width:160px;
-	padding:20px 0 0;
+	padding:10px 0 0;
+	text-align:center;
 	width:100%;
 	ul {
 		li {
-			display:block;
+			display:inline;
 			a {
 				@include typewriter;
 				@include nounderline;
-				color:$darkgray;
-				display:block;
+				color:$offwhite;
 				font-size:20px;
 				line-height:1;
 				padding:5px 10px 3px;
@@ -80,6 +55,16 @@ body {
 				&:hover {
 					background-color:$red;
 					color:#fff;
+				}
+			}
+			&.social-icon {
+				a {
+					&:hover {
+						background:transparent;
+					}
+					img {
+						vertical-align: bottom;
+					}
 				}
 			}
 			&.active {
@@ -91,16 +76,18 @@ body {
 		}
 	}
 }
+#main {
+	@include lora;
+	margin:0 auto;
+	width:800px;
+}
 #content {
 	background:#fff;
-	float:right;
-	max-width:800px;
 	padding:20px 0;
 	width:100%;
 }
 #footer {
 	@include sidepad;
-	clear:both;
 	color:$medgray;
 	font-size:12px;
 	line-height:16px;
