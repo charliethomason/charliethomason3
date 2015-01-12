@@ -1,5 +1,5 @@
 .blog-index {
-	@include mid400;
+	@include mid500;
 	h2 {
 		@include typewriter;
 		color:$darkgray;
@@ -19,22 +19,18 @@
 }
 article.blog-item {
 	@include clearfix;
-	border-top:1px solid $litegray;
-	padding:10px 0;
+	background-color: $offwhite;
+	margin: 10px 0 0;
+	padding:10px;
 	&:first-child {
-		border-top:medium none;
-		padding-top:0;
+		margin-top:0;
 	}
 	h3 {
-		@include lora;
-		font-size:20px;
+		@include lato;
+		font-size:18px;
 		font-weight:bold;
-		line-height:26px;
+		line-height:20px;
 		padding-bottom:2px;
-		@media all and (max-width:599px) {
-			font-size:18px;
-			line-height:24px;
-		}
 		a {
 			&:hover,&:focus {
 				color:$medgray;
@@ -54,21 +50,13 @@ article.blog-item {
 			height:auto;
 			max-width:100%;
 		}
-		@media all and (max-width:599px) {
-			border:none;
-			max-width:80px;
-		}
 	}
 	.info {
 		color:$darkgray;
 		display:block;
-		font-size:16px;
-		line-height:20px;
+		font-size:14px;
+		line-height:18px;
 		padding:0 0 5px;
-		@media all and (max-width:599px) {
-			font-size:14px;
-			line-height:18px;
-		}
 	}
 	.subjects {
 		color:$medgray;
@@ -76,15 +64,11 @@ article.blog-item {
 			display:inline;
 			a {
 				color:$medgray;
-				font-size:16px;
-				line-height:20px;
+				font-size:14px;
+				line-height:18px;
 				text-transform: lowercase;
 				&:hover,&:focus {
 					color:$red;
-				}
-				@media all and (max-width:599px) {
-					font-size:14px;
-					line-height:18px;
 				}
 			}
 		}
@@ -122,7 +106,7 @@ article.blog-single {
 		}
 	}
 	.the-content {
-		@include lora;
+		@include lato;
 		font-size:16px;
 		line-height:24px;
 		padding:0 0 20px;

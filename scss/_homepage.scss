@@ -19,13 +19,9 @@
 			color:$darkgray;
 			font-size:26px;
 			line-height: 30px;
-			@media all and (max-width:599px) {
-				font-size:22px;
-				line-height:26px;
-			}
 		}
 		p {
-			@include lora;
+			@include lato;
 			font-size:16px;
 			line-height:24px;
 		}
@@ -36,6 +32,7 @@
 	}
 	#home-recent {
 		@include clearfix;
+		padding: 20px 0;
 		.the-latest {
 			padding:10px;
 			width:50%;
@@ -44,10 +41,6 @@
 			}
 			&.recent-blog {
 				float:right;
-			}
-			@media all and (max-width:599px) {
-				float:none;
-				width:100%;
 			}
 			h2 {
 				@include typewriter;
@@ -59,19 +52,9 @@
 						color:$red;
 					}
 				}
-				@media all and (max-width:599px) {
-					font-size:22px;
-					line-height:26px;
-				}
 			}
 			.blog-item {
-				border-top:medium none;
-				a.blog-thumb {
-					border-color:$litegray;
-					&:hover, &:focus {
-						border-color:$red;	
-					}
-				}
+				margin-top: 0;
 			}
 		}
 	}

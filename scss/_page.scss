@@ -13,11 +13,6 @@ article.blog-single.page {
 		}
 	}
 	&.about {
-		.post-image {
-			@media all and (max-width:599px) {
-				padding:0 20px;
-			}
-		}
 	}
 	&.shop {
 		ol.shop-grid {
@@ -29,11 +24,6 @@ article.blog-single.page {
 				padding:10px 2.2% 20px;
 				text-align:center;
 				width:50%;
-				@media all and (max-width:599px) {
-					float:none;
-					padding:10px 10px 20px;
-					width:100%;
-				}
 				.product-image {
 					display:block;
 					img {

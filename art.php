@@ -26,8 +26,8 @@ Template Name: Gallery
 		?>
 
 		<article class="blog-item">
-			<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
 			<a href="<?php the_permalink(); ?>" class="blog-thumb"><?php the_post_thumbnail('thumbnail'); ?></a>
+			<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
 			<div class="info"><?=$year?>&nbsp;&bull;&nbsp;<?=$medium?></div>
 			<ul class="subjects">
 				<?php

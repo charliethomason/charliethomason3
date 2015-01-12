@@ -10,9 +10,9 @@
 			<?php while(have_posts()) : the_post(); ?>
 		 
 			<article class="blog-item">
-				<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
 				<a href="<?php the_permalink(); ?>" class="blog-thumb"><?php the_post_thumbnail('thumbnail'); ?></a>
-				<div class="info"><?php the_time('D, M j, Y'); ?>
+				<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+				<div class="info"><?php the_time('D, M j, Y'); ?></div>
 				<ul class="subjects">
 					<?php
 						if( $categories = get_the_category() ) {

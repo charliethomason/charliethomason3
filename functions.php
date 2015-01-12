@@ -1,7 +1,7 @@
 <?php
 // Add CSS files
 function bleachwave_add_styles() {
-	wp_enqueue_style( 'fonts', 'http://fonts.googleapis.com/css?family=Lora:400,400italic,700,700italic|Special+Elite', false,null );
+	wp_enqueue_style( 'fonts', 'http://fonts.googleapis.com/css?family=Lato:400,400italic,700,700italic|Special+Elite', false,null );
 	wp_enqueue_style( 'style', get_template_directory_uri() . '/style.min.css', array('fonts'), null);
 	wp_enqueue_style( 'lightbox-style', get_template_directory_uri() . '/inc/lightbox/css/jquery.fancybox.css', array('style'),null );
 }
@@ -14,7 +14,7 @@ function bleachwave_add_scripts() {
 	wp_enqueue_script( 'jquery' );
     wp_enqueue_script( 'fancybox', get_template_directory_uri() . '/inc/lightbox/js/jquery.fancybox.pack.js', array( 'jquery' ), null, true );
     wp_enqueue_script( 'lightbox', get_template_directory_uri() . '/inc/lightbox/js/lightbox.js', array( 'fancybox' ), null, true );
-    // wp_enqueue_script( 'app', get_template_directory_uri() . '/js/app.js', array( 'jquery' ), null, true );
+    wp_enqueue_script( 'app', get_template_directory_uri() . '/js/app.js', array( 'jquery' ), null, true );
 }
 add_action( 'wp_enqueue_scripts', 'bleachwave_add_scripts' );
 

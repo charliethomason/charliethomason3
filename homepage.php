@@ -64,7 +64,7 @@ Template Name: Homepage
 			<article class="blog-item">
 				<a href="<?php the_permalink(); ?>" class="blog-thumb"><?php the_post_thumbnail('thumbnail'); ?></a>
 				<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
-				<div class="info"><?php the_time('D, M j, Y'); ?>
+				<div class="info"><?php the_time('D, M j, Y'); ?></div>
 				<ul class="subjects">
 					<?php
 						if( $categories = get_the_category() ) {

@@ -6,9 +6,12 @@ body {
 	width:100%;
 	.headwrap {
 		margin:0 auto;
-		max-width:960px;
 		padding:15px 0 10px;
-		width:100%;
+		width:800px;
+		@include mobile {
+			padding-bottom: 0;
+			width:320px;
+		}
 	}
 	h1 {
 		font-weight:normal;
@@ -22,7 +25,7 @@ body {
 			font-size:30px;
 			text-shadow:0 2px 0 #000;
 			.first-name {
-				@include lora;
+				@include lato;
 				font-style:italic;
 				font-weight:bold;
 				text-transform: uppercase;
@@ -43,10 +46,17 @@ body {
 	width:100%;
 	ul {
 		li {
-			display:inline;
+			display:inline-block;
+			margin-left: 2px;
+			vertical-align: middle;
+			&:first-child {
+				margin-left:0;
+			}
 			a {
 				@include typewriter;
 				@include nounderline;
+				border: 1px solid $green;
+				border-radius:4px;
 				color:$offwhite;
 				font-size:20px;
 				line-height:1;
@@ -54,40 +64,131 @@ body {
 				text-transform:lowercase;
 				&:hover {
 					background-color:$red;
+					border-color: $darkgray;
 					color:#fff;
 				}
 			}
 			&.social-icon {
+				margin-left: 5px;
 				a {
+					@include imgReplace;
+					border: medium none;
+					display:block;
+					padding:0;
 					&:hover {
-						background:transparent;
-					}
-					img {
-						vertical-align: bottom;
+						background-color: transparent;
 					}
 				}
 			}
 			&.active {
 				a {
 					background-color:$red;
+					border-color: $darkgray;
 					color:#fff;
+				}
+			}
+			&#social-twitter {
+				a {
+					background: url('images/twitter01.png') no-repeat scroll left bottom transparent;
+					height: 24px;
+					width: 30px;
+					@include retina {
+						background-image: url('images/twitter01-48.png');
+						background-size: 30px 24px;
+					}
+				}
+			}
+			&#social-instagram {
+				margin-left:10px;
+				a {
+					background: url('images/instagram01.png') no-repeat scroll left bottom transparent;
+					height: 24px;
+					width: 24px;	
+					@include retina {
+						background-image: url('images/instagram01-48.png');
+						background-size: 24px 24px;
+					}
+				}
+			}
+		}
+	}
+	@include mobile {
+		position:relative;
+		padding: 0;
+		ul {
+			background-color: $green;
+			overflow:hidden;
+			position:absolute;
+			left:-9999px;
+			top:-9999px;
+			text-align:center;
+			width:320px;
+			&.shown {
+				left:0;
+				top:100%;
+			}
+			li {
+				display:block;
+				margin-left:0;
+				a {
+					border: medium none;
+					border-radius: 0;
+					display:block;
+				}
+				&.social-icon {
+					display:inline-block;
+					margin: 10px;
 				}
 			}
 		}
 	}
 }
+#hamburger {
+	@include lato;
+	@include nounderline;
+	color: $offwhite;
+	display:none;
+	font-size:18px;
+	font-weight:bold;
+	line-height:1;
+	padding:10px 0;
+	text-transform:uppercase;
+	span {
+		background: url('images/hamburger01-25.png') no-repeat scroll 0 0 transparent;
+		display:inline-block;
+		margin-right: 10px;
+		height: 25px;
+		width: 39px;
+		vertical-align: middle;
+		@include retina {
+			background-image: url('images/hamburger01-50.png');
+			background-size: 39px 25px;
+		}
+	}
+	&:hover {
+		background-color: $red;
+	}
+	@include mobile {
+		display:block;
+	}
+}
 #main {
-	@include lora;
+	@include lato;
 	margin:0 auto;
 	width:800px;
+	@include mobile {
+		width:320px;
+	}
 }
 #content {
 	background:#fff;
-	padding:20px 0;
+	border-color: $slate;
+	border-style: solid;
+	border-width: 0 1px 1px;
+	padding:20px 0 0;
 	width:100%;
 }
 #footer {
-	@include sidepad;
 	color:$medgray;
 	font-size:12px;
 	line-height:16px;
@@ -100,16 +201,14 @@ a {
 	&.btn {
 		@include nounderline;
 		background-color:$green;
-		border:2px solid $darkgray;
-		border-radius:20px;
+		border:1px solid $darkgray;
+		border-radius:4px;
 		color:#fff;
 		display:inline-block;
 		font-size:16px;
 		font-weight:bold;
 		line-height:1;
-		padding:10px 20px;
-		-webkit-box-shadow:0 2px 0 $darkgray;
-		box-shadow:0 2px 0 $darkgray;
+		padding:8px 10px 10px;
 		&.secondary {
 			background-color:$medgray;
 			&:hover, &:focus {
@@ -127,9 +226,6 @@ a {
 		&:hover, &:focus {
 			background-color:$red;
 			color:#fff;
-		}
-		@media all and (max-width:599px) {
-			padding:7px 15px;
 		}
 	}
 	&:hover, &:focus {
@@ -166,7 +262,7 @@ img {
 	text-align:center;
 }
 blockquote {
-	@include lora;
+	@include lato;
 	@include mid500;
 	color:$medgray;
 	font-size:18px;
@@ -195,7 +291,7 @@ blockquote {
 }
 nav.page-nav {
 	@include clearfix;
-	background-color:#444;
+	background-color:$slate;
 	color:$offwhite;
 	padding:20px;
 	.prev {
@@ -211,16 +307,14 @@ nav.page-nav {
 	a {
 		@include nounderline;
 		background:#fff;
-		border:2px solid $darkgray;
-		border-radius:15px;
+		border:1px solid $darkgray;
+		border-radius:4px;
 		color:$darkgray;
 		display:inline-block;
 		font-size:14px;
 		font-weight:bold;
 		line-height:20px;
-		padding:5px 15px;
-		-webkit-box-shadow:0 3px 0 $darkgray;
-		box-shadow:0 3px 0 $darkgray;
+		padding:5px 10px 7px;
 		&:hover, &:focus {
 			background-color:$red;
 			color:#fff;
