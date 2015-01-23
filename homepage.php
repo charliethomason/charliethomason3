@@ -13,7 +13,7 @@ Template Name: Homepage
 		<article class="intro">
 			<h2>Artist &amp; Web Developer from Chicago</h2>
 			<p>Charlie Thomason is a Front-end Web Developer and Artist living in Chicago, Illinois. He is currently a Presentation Layer Engineer for <a href="http://razorfish.com" target="_blank" rel="nofollow">Razorfish</a>, where he specializes in responsive design, web accessibility, and rapid prototyping. As an Artist, he loves painting and photography &mdash; especially birds, landscapes, and movie-related themes. This website features a gallery his best artwork, a personal blog, and a store featuring his self-published book, <a href="http://www.blurb.com/b/2868673-open-range" target="_blank" rel="nofollow"><em>Open Range: From Monument Valley to the Mojave Desert</em></a>.</p>
-			<div class="button-row"><a href="about" class="btn secondary">Learn More</a></div>
+			<div class="button-row"><a href="about" class="btn">Learn More</a></div>
 		</article>
 	</div>
 	<section id="home-recent">

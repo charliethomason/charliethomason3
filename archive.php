@@ -41,8 +41,8 @@
 						$thumb_url = wp_get_attachment_image_src($thumb_id,'full', true);
 					?>
 					<article class="blog-item">
-						<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
 						<a href="<?php the_permalink(); ?>" class="blog-thumb"><?php the_post_thumbnail('thumbnail'); ?></a>
+						<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
 						<div class="info"><?=$year?>&nbsp;&bull;&nbsp;<?=$medium?></div>
 						<ul class="subjects">
 							<?php
@@ -57,8 +57,8 @@
 					</article>
 				<?php } else { ?>
 					<article class="blog-item">
-						<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
 						<a href="<?php the_permalink(); ?>" class="blog-thumb"><?php the_post_thumbnail('thumbnail'); ?></a>
+						<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
 						<div class="info"><?php the_time('D, M j, Y'); ?>
 						<ul class="subjects">
 							<?php

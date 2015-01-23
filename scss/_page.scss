@@ -36,8 +36,10 @@ article.blog-single.page {
 					}
 				}
 				h3 {
+					@include oswald;
 					border-bottom:none;
-					font-size:18px;
+					font-weight:normal;
+					max-width:none;
 					padding-top:10px;
 				}
 				.product, 

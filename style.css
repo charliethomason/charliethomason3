@@ -93,12 +93,16 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+}
+
 body {
   background: #f1f1f1;
 }
 
 #header {
-  background: #507d2a;
+  background: #000;
   width: 100%;
 }
 #header .headwrap {
@@ -108,8 +112,9 @@ body {
 }
 @media (max-width: 840px) {
   #header .headwrap {
+    max-width: 600px;
     padding-bottom: 0;
-    width: 320px;
+    width: 100%;
   }
 }
 #header h1 {
@@ -121,21 +126,17 @@ body {
 #header h1 a {
   color: #fff;
   display: block;
-  font-size: 30px;
+  font-size: 36px;
   text-shadow: 0 2px 0 #000;
 }
 #header h1 a:hover, #header h1 a:focus {
   text-decoration: none;
 }
 #header h1 a .first-name {
-  font-family: Lato, Helvetica, Arial, sans-serif;
-  font-style: italic;
-  font-weight: bold;
-  text-transform: uppercase;
+  font-family: "IM Fell English SC", Garamond, "Times New Roman", serif;
 }
 #header h1 a .last-name {
-  font-family: 'Special Elite', 'American Typewriter', Typewriter, monospace;
-  text-transform: lowercase;
+  font-family: "IM Fell English SC", Garamond, "Times New Roman", serif;
 }
 #header h1 a:hover, #header h1 a:focus {
   color: #f1f1f1;
@@ -155,22 +156,18 @@ body {
   margin-left: 0;
 }
 #main-nav ul li a {
-  font-family: 'Special Elite', 'American Typewriter', Typewriter, monospace;
-  border: 1px solid #507d2a;
-  border-radius: 4px;
+  font-family: "IM Fell English SC", Garamond, "Times New Roman", serif;
   color: #f1f1f1;
-  font-size: 20px;
+  font-size: 28px;
   line-height: 1;
-  padding: 5px 10px 3px;
+  outline: none;
+  padding: 0 10px;
+  text-decoration: none;
   text-transform: lowercase;
 }
 #main-nav ul li a:hover, #main-nav ul li a:focus {
-  text-decoration: none;
-}
-#main-nav ul li a:hover {
-  background-color: #b00000;
-  border-color: #222;
-  color: #fff;
+  color: #cf0000;
+  text-decoration: line-through;
 }
 #main-nav ul li.social-icon {
   margin-left: 5px;
@@ -182,13 +179,11 @@ body {
   display: block;
   padding: 0;
 }
-#main-nav ul li.social-icon a:hover {
-  background-color: transparent;
-}
 #main-nav ul li.active a {
-  background-color: #b00000;
-  border-color: #222;
-  color: #fff;
+  color: #0c9;
+}
+#main-nav ul li.active a:hover, #main-nav ul li.active a:focus {
+  color: #cf0000;
 }
 #main-nav ul li#social-twitter a {
   background: url("images/twitter01.png") no-repeat scroll left bottom transparent;
@@ -221,7 +216,7 @@ body {
     padding: 0;
   }
   #main-nav ul {
-    background-color: #507d2a;
+    background-color: #000;
     overflow: hidden;
     position: absolute;
     left: -9999px;
@@ -249,12 +244,13 @@ body {
 }
 
 #hamburger {
-  font-family: Lato, Helvetica, Arial, sans-serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
   color: #f1f1f1;
   display: none;
   font-size: 18px;
   font-weight: bold;
   line-height: 1;
+  outline: none;
   padding: 10px 0;
   text-transform: uppercase;
 }
@@ -276,7 +272,7 @@ body {
   }
 }
 #hamburger:hover {
-  background-color: #b00000;
+  background-color: #cf0000;
 }
 @media (max-width: 840px) {
   #hamburger {
@@ -285,13 +281,15 @@ body {
 }
 
 #main {
-  font-family: Lato, Helvetica, Arial, sans-serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
   margin: 0 auto;
   width: 800px;
 }
 @media (max-width: 840px) {
   #main {
-    width: 320px;
+    max-width: 640px;
+    padding: 0 20px;
+    width: 100%;
   }
 }
 
@@ -314,10 +312,11 @@ body {
 }
 
 a {
-  color: #b00000;
+  color: #cf0000;
 }
 a.btn {
-  background-color: #507d2a;
+  font-family: Helvetica, Arial, sans-serif;
+  background-color: #666;
   border: 1px solid #222;
   border-radius: 4px;
   color: #fff;
@@ -325,16 +324,10 @@ a.btn {
   font-size: 16px;
   font-weight: bold;
   line-height: 1;
-  padding: 8px 10px 10px;
+  padding: 8px 10px 6px;
 }
 a.btn:hover, a.btn:focus {
   text-decoration: none;
-}
-a.btn.secondary {
-  background-color: #666;
-}
-a.btn.secondary:hover, a.btn.secondary:focus {
-  background-color: #b00000;
 }
 a.btn.blue {
   background-color: #55acee;
@@ -345,7 +338,7 @@ a.btn.blue img {
   width: 20px;
 }
 a.btn:hover, a.btn:focus {
-  background-color: #b00000;
+  background-color: #cf0000;
   color: #fff;
 }
 a:hover, a:focus {
@@ -397,7 +390,7 @@ img.bigpic {
 }
 
 blockquote {
-  font-family: Lato, Helvetica, Arial, sans-serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
   margin: 0 auto;
   max-width: 500px;
   color: #666;
@@ -408,7 +401,7 @@ blockquote {
   quotes: "“" "”" "‘" "’";
 }
 blockquote:before, blockquote:after {
-  color: #507d2a;
+  color: #0c9;
   font-size: 40px;
   font-weight: bold;
   line-height: 10px;
@@ -449,6 +442,7 @@ nav.page-nav .next {
   width: 49%;
 }
 nav.page-nav a {
+  font-family: Helvetica, Arial, sans-serif;
   background: #fff;
   border: 1px solid #222;
   border-radius: 4px;
@@ -457,13 +451,13 @@ nav.page-nav a {
   font-size: 14px;
   font-weight: bold;
   line-height: 20px;
-  padding: 5px 10px 7px;
+  padding: 8px 10px 5px;
 }
 nav.page-nav a:hover, nav.page-nav a:focus {
   text-decoration: none;
 }
 nav.page-nav a:hover, nav.page-nav a:focus {
-  background-color: #b00000;
+  background-color: #cf0000;
   color: #fff;
 }
 
@@ -506,6 +500,13 @@ hr {
   float: left;
   width: 33.8%;
 }
+@media (max-width: 840px) {
+  #homepage #home-photo {
+    float: none;
+    text-align: center;
+    width: 100%;
+  }
+}
 #homepage #home-photo img {
   max-width: 100%;
 }
@@ -514,14 +515,22 @@ hr {
   padding-left: 10px;
   width: 66.1%;
 }
+@media (max-width: 840px) {
+  #homepage article.intro {
+    float: none;
+    padding: 0;
+    text-align: center;
+    width: 100%;
+  }
+}
 #homepage article.intro h2 {
-  font-family: 'Special Elite', 'American Typewriter', Typewriter, monospace;
+  font-family: "IM Fell English SC", Garamond, "Times New Roman", serif;
   color: #222;
-  font-size: 26px;
+  font-size: 28px;
   line-height: 30px;
 }
 #homepage article.intro p {
-  font-family: Lato, Helvetica, Arial, sans-serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 16px;
   line-height: 24px;
 }
@@ -550,15 +559,15 @@ hr {
   float: right;
 }
 #homepage #home-recent .the-latest h2 {
-  font-family: 'Special Elite', 'American Typewriter', Typewriter, monospace;
+  font-family: "IM Fell English SC", Garamond, "Times New Roman", serif;
   color: #222;
-  font-size: 20px;
+  font-size: 24px;
 }
 #homepage #home-recent .the-latest h2 a {
   color: #222;
 }
 #homepage #home-recent .the-latest h2 a:hover, #homepage #home-recent .the-latest h2 a:focus {
-  color: #b00000;
+  color: #cf0000;
 }
 #homepage #home-recent .the-latest .blog-item {
   margin-top: 0;
@@ -566,6 +575,7 @@ hr {
 
 h2.hashtag {
   text-transform: lowercase;
+  word-spacing: -6px;
 }
 h2.hashtag a:before {
   content: "#";
@@ -576,20 +586,23 @@ article.art-single .info {
   text-align: center;
 }
 article.art-single .info h2 {
-  font-family: 'Special Elite', 'American Typewriter', Typewriter, monospace;
+  font-family: "IM Fell English SC", Garamond, "Times New Roman", serif;
   color: #666;
-  font-size: 24px;
-  line-height: 30px;
+  font-size: 28px;
+  line-height: 34px;
   text-align: center;
 }
 article.art-single .info .publish {
+  font-family: Helvetica, Arial, sans-serif;
   color: #666;
   font-size: 16px;
-  font-weight: bold;
   padding: 5px 0 0;
 }
+article.art-single .info .publish .year {
+  font-weight: bold;
+}
 article.art-single .description {
-  font-family: Lato, Helvetica, Arial, sans-serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
   color: #222;
   font-size: 16px;
   line-height: 24px;
@@ -658,9 +671,10 @@ article.art-single .meta .subjects {
 article.art-single .meta .subjects a {
   color: #666;
   text-transform: lowercase;
+  word-spacing: -3px;
 }
 article.art-single .meta .subjects a:hover, article.art-single .meta .subjects a:focus {
-  color: #b00000;
+  color: #cf0000;
 }
 
 .blog-index {
@@ -668,7 +682,7 @@ article.art-single .meta .subjects a:hover, article.art-single .meta .subjects a
   max-width: 500px;
 }
 .blog-index h2 {
-  font-family: 'Special Elite', 'American Typewriter', Typewriter, monospace;
+  font-family: "IM Fell English SC", Garamond, "Times New Roman", serif;
   color: #222;
   font-size: 32px;
   padding: 20px 0 0;
@@ -678,10 +692,10 @@ article.art-single .meta .subjects a:hover, article.art-single .meta .subjects a
   color: #222;
 }
 .blog-index h2 a:hover, .blog-index h2 a:focus {
-  color: #b00000;
+  color: #cf0000;
 }
 .blog-index .blog-posts {
-  padding: 20px 0;
+  padding: 20px 0 40px;
 }
 
 article.blog-item {
@@ -700,9 +714,8 @@ article.blog-item:first-child {
   margin-top: 0;
 }
 article.blog-item h3 {
-  font-family: Lato, Helvetica, Arial, sans-serif;
+  font-family: Oswald, Impact, "Arial Narrow", Arial, sans-serif;
   font-size: 18px;
-  font-weight: bold;
   line-height: 20px;
   padding-bottom: 2px;
 }
@@ -716,7 +729,7 @@ article.blog-item a.blog-thumb {
   margin-right: 8px;
 }
 article.blog-item a.blog-thumb:hover, article.blog-item a.blog-thumb:focus {
-  border-color: #b00000;
+  border-color: #cf0000;
 }
 article.blog-item a.blog-thumb img {
   display: block;
@@ -741,9 +754,10 @@ article.blog-item .subjects li a {
   font-size: 14px;
   line-height: 18px;
   text-transform: lowercase;
+  word-spacing: -3px;
 }
 article.blog-item .subjects li a:hover, article.blog-item .subjects li a:focus {
-  color: #b00000;
+  color: #cf0000;
 }
 
 article.blog-single:before, article.blog-single:after {
@@ -758,28 +772,28 @@ article.blog-single .info {
   text-align: center;
 }
 article.blog-single .info h2 {
-  font-family: 'Special Elite', 'American Typewriter', Typewriter, monospace;
-  font-size: 24px;
-  line-height: 30px;
+  font-family: "IM Fell English SC", Garamond, "Times New Roman", serif;
+  font-size: 28px;
+  line-height: 34px;
   text-align: center;
 }
 article.blog-single .info h2 a:hover, article.blog-single .info h2 a:focus {
   color: #666;
 }
 article.blog-single .info .publish {
+  font-family: Helvetica, Arial, sans-serif;
   color: #666;
   font-size: 16px;
-  font-weight: bold;
   padding: 5px 0 0;
 }
 article.blog-single .info span.category a {
   color: #666;
 }
 article.blog-single .info span.category a:hover, article.blog-single .info span.category a:focus {
-  color: #b00000;
+  color: #cf0000;
 }
 article.blog-single .the-content {
-  font-family: Lato, Helvetica, Arial, sans-serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 16px;
   line-height: 24px;
   padding: 0 0 20px;
@@ -787,8 +801,8 @@ article.blog-single .the-content {
 article.blog-single .the-content h3 {
   margin: 0 auto;
   max-width: 500px;
-  border-bottom: 2px solid #b00000;
-  color: #b00000;
+  border-bottom: 2px solid #cf0000;
+  color: #cf0000;
   font-size: 18px;
   font-weight: bold;
   line-height: 24px;
@@ -815,6 +829,25 @@ article.blog-single .the-content .post-image img {
   height: auto;
   max-width: 100%;
 }
+article.blog-single .meta {
+  margin: 0 auto;
+  max-width: 500px;
+  border-top: 1px solid #aaa;
+  padding: 20px 0;
+  text-align: center;
+}
+article.blog-single .meta .subjects {
+  color: #666;
+  padding: 0 0 20px;
+}
+article.blog-single .meta .subjects a {
+  color: #666;
+  text-transform: lowercase;
+  word-spacing: -3px;
+}
+article.blog-single .meta .subjects a:hover, article.blog-single .meta .subjects a:focus {
+  color: #cf0000;
+}
 
 article.blog-single.page .info {
   padding: 25px 0 15px;
@@ -827,7 +860,7 @@ article.blog-single.page .info h2 a {
   color: #222;
 }
 article.blog-single.page .info h2 a:hover, article.blog-single.page .info h2 a:focus {
-  color: #b00000;
+  color: #cf0000;
 }
 article.blog-single.page.shop ol.shop-grid {
   list-style: none;
@@ -853,11 +886,13 @@ article.blog-single.page.shop ol.shop-grid li .product-image img {
   border: 2px solid #f1f1f1;
 }
 article.blog-single.page.shop ol.shop-grid li .product-image:hover img, article.blog-single.page.shop ol.shop-grid li .product-image:focus img {
-  border-color: #b00000;
+  border-color: #cf0000;
 }
 article.blog-single.page.shop ol.shop-grid li h3 {
+  font-family: Oswald, Impact, "Arial Narrow", Arial, sans-serif;
   border-bottom: none;
-  font-size: 18px;
+  font-weight: normal;
+  max-width: none;
   padding-top: 10px;
 }
 article.blog-single.page.shop ol.shop-grid li .product,

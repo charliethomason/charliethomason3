@@ -2,15 +2,16 @@ body {
 	background:$offwhite;
 }
 #header {
-	background: $green;
+	background: #000;
 	width:100%;
 	.headwrap {
 		margin:0 auto;
 		padding:15px 0 10px;
 		width:800px;
 		@include mobile {
+			max-width:600px;
 			padding-bottom: 0;
-			width:320px;
+			width:100%;
 		}
 	}
 	h1 {
@@ -22,17 +23,13 @@ body {
 			@include nounderline;
 			color:#fff;
 			display:block;
-			font-size:30px;
+			font-size:36px;
 			text-shadow:0 2px 0 #000;
 			.first-name {
-				@include lato;
-				font-style:italic;
-				font-weight:bold;
-				text-transform: uppercase;
+				@include imfell;
 			}
 			.last-name {
-				@include typewriter;
-				text-transform:lowercase;
+				@include imfell;
 			}
 			&:hover, &:focus {
 				color:$offwhite;
@@ -53,19 +50,18 @@ body {
 				margin-left:0;
 			}
 			a {
-				@include typewriter;
-				@include nounderline;
-				border: 1px solid $green;
-				border-radius:4px;
+				@include imfell;
 				color:$offwhite;
-				font-size:20px;
+				font-size:28px;
 				line-height:1;
-				padding:5px 10px 3px;
+				outline: none;
+				padding:0 10px;
+				text-decoration: none;
 				text-transform:lowercase;
-				&:hover {
-					background-color:$red;
-					border-color: $darkgray;
-					color:#fff;
+				&:hover,
+				&:focus {
+					color:$red;
+					text-decoration: line-through;
 				}
 			}
 			&.social-icon {
@@ -76,15 +72,16 @@ body {
 					display:block;
 					padding:0;
 					&:hover {
-						background-color: transparent;
 					}
 				}
 			}
 			&.active {
 				a {
-					background-color:$red;
-					border-color: $darkgray;
-					color:#fff;
+					color:$teal;
+					&:hover,
+					&:focus {
+						color: $red;
+					}
 				}
 			}
 			&#social-twitter {
@@ -116,7 +113,7 @@ body {
 		position:relative;
 		padding: 0;
 		ul {
-			background-color: $green;
+			background-color: #000;
 			overflow:hidden;
 			position:absolute;
 			left:-9999px;
@@ -144,13 +141,14 @@ body {
 	}
 }
 #hamburger {
-	@include lato;
+	@include serif;
 	@include nounderline;
 	color: $offwhite;
 	display:none;
 	font-size:18px;
 	font-weight:bold;
 	line-height:1;
+	outline: none;
 	padding:10px 0;
 	text-transform:uppercase;
 	span {
@@ -173,11 +171,13 @@ body {
 	}
 }
 #main {
-	@include lato;
+	@include serif;
 	margin:0 auto;
 	width:800px;
 	@include mobile {
-		width:320px;
+		max-width:640px;
+		padding:0 20px;
+		width:100%;
 	}
 }
 #content {
@@ -199,8 +199,9 @@ body {
 a {
 	color:$red;
 	&.btn {
+		@include sans;
 		@include nounderline;
-		background-color:$green;
+		background-color:$medgray;
 		border:1px solid $darkgray;
 		border-radius:4px;
 		color:#fff;
@@ -208,13 +209,7 @@ a {
 		font-size:16px;
 		font-weight:bold;
 		line-height:1;
-		padding:8px 10px 10px;
-		&.secondary {
-			background-color:$medgray;
-			&:hover, &:focus {
-				background-color:$red;
-			}
-		}
+		padding:8px 10px 6px;
 		&.blue {
 			background-color:$twitterblue;
 			img {
@@ -262,7 +257,7 @@ img {
 	text-align:center;
 }
 blockquote {
-	@include lato;
+	@include serif;
 	@include mid500;
 	color:$medgray;
 	font-size:18px;
@@ -271,7 +266,7 @@ blockquote {
 	padding:20px 6%;
 	quotes: "\201C""\201D""\2018""\2019";
 	&:before, &:after {
-		color:$green;
+		color:$teal;
 		font-size:40px;
 		font-weight:bold;
 		line-height:10px;
@@ -305,6 +300,7 @@ nav.page-nav {
 		width:49%;
 	}
 	a {
+		@include sans;
 		@include nounderline;
 		background:#fff;
 		border:1px solid $darkgray;
@@ -314,7 +310,7 @@ nav.page-nav {
 		font-size:14px;
 		font-weight:bold;
 		line-height:20px;
-		padding:5px 10px 7px;
+		padding:8px 10px 5px;
 		&:hover, &:focus {
 			background-color:$red;
 			color:#fff;

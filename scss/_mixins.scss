@@ -1,8 +1,14 @@
-@mixin lato {
-	font-family:Lato, Helvetica, Arial, sans-serif;
+@mixin serif {
+	font-family: Georgia, "Times New Roman", Times, serif;
 }
-@mixin typewriter {
-	font-family:'Special Elite', 'American Typewriter', Typewriter, monospace;
+@mixin sans {
+	font-family: Helvetica, Arial, sans-serif;
+}
+@mixin imfell {
+	font-family: "IM Fell English SC", Garamond, "Times New Roman", serif;
+}
+@mixin oswald {
+	font-family: Oswald, Impact, "Arial Narrow", Arial, sans-serif;
 }
 @mixin clearfix {
 	&:before,
@@ -45,8 +51,8 @@
 }
 
 $offwhite: #f1f1f1;
-$green: #507d2a;
-$red: #b00000;
+$teal: #0c9;
+$red: #cf0000;
 $darkgray: #222;
 $medgray: #666;
 $litegray: #aaa;

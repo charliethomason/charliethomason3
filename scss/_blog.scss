@@ -1,7 +1,7 @@
 .blog-index {
 	@include mid500;
 	h2 {
-		@include typewriter;
+		@include imfell;
 		color:$darkgray;
 		font-size:32px;
 		padding:20px 0 0;
@@ -14,7 +14,7 @@
 		}
 	}
 	.blog-posts {
-		padding:20px 0;
+		padding:20px 0 40px;
 	}
 }
 article.blog-item {
@@ -26,9 +26,8 @@ article.blog-item {
 		margin-top:0;
 	}
 	h3 {
-		@include lato;
+		@include oswald;
 		font-size:18px;
-		font-weight:bold;
 		line-height:20px;
 		padding-bottom:2px;
 		a {
@@ -67,6 +66,7 @@ article.blog-item {
 				font-size:14px;
 				line-height:18px;
 				text-transform: lowercase;
+				word-spacing: -3px;
 				&:hover,&:focus {
 					color:$red;
 				}
@@ -80,9 +80,9 @@ article.blog-single {
 		padding:20px;
 		text-align:center;
 		h2 {
-			@include typewriter;
-			font-size:24px;
-			line-height: 30px;
+			@include imfell;
+			font-size: 28px;
+			line-height: 34px;
 			text-align:center;
 			a {
 				&:hover, &:focus {
@@ -91,9 +91,9 @@ article.blog-single {
 			}
 		}
 		.publish {
+			@include sans;
 			color:$medgray;
 			font-size:16px;
-			font-weight:bold;
 			padding:5px 0 0;
 		}
 		span.category {
@@ -106,7 +106,7 @@ article.blog-single {
 		}
 	}
 	.the-content {
-		@include lato;
+		@include serif;
 		font-size:16px;
 		line-height:24px;
 		padding:0 0 20px;
@@ -137,6 +137,24 @@ article.blog-single {
 			img {
 				height:auto;
 				max-width:100%;
+			}
+		}
+	}
+	.meta {
+		@include mid500;
+		border-top:1px solid $litegray;
+		padding:20px 0;
+		text-align:center;
+		.subjects {
+			color:$medgray;
+			padding:0 0 20px;
+			a {
+				color:$medgray;
+				text-transform: lowercase;
+				word-spacing:-3px;
+				&:hover,&:focus {
+					color:$red;
+				}
 			}
 		}
 	}
