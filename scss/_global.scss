@@ -150,7 +150,7 @@ body {
 	}
 }
 #hamburger {
-	@include serif;
+	@include sans;
 	@include nounderline;
 	color: $offwhite;
 	display:none;
