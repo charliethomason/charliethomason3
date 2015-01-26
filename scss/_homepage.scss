@@ -49,9 +49,17 @@
 			width:50%;
 			&.recent-art {
 				float:left;
+				@include mobile {
+					float: none;
+					width:100%;
+				}
 			}
 			&.recent-blog {
 				float:right;
+				@include mobile {
+					float: none;
+					width:100%;
+				}
 			}
 			h2 {
 				@include imfell;

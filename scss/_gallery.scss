@@ -46,9 +46,15 @@ article.art-single {
 		.gallery {
 			@include clearfix;
 			@include mid500;
+			@include mobile {
+				max-width:300px;
+			}
 			.gallery-item {
 				float:left;
 				width:20%;
+				@include mobile {
+					width:33.3%;
+				}
 				.gallery-icon {
 					a {
 						display:block;
@@ -67,6 +73,9 @@ article.art-single {
 		p {
 			@include mid500;
 			padding:10px 0;
+			@include mobile {
+				padding:10px;
+			}
 		}
 	}
 	.meta {

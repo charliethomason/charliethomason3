@@ -24,6 +24,11 @@ article.blog-single.page {
 				padding:10px 2.2% 20px;
 				text-align:center;
 				width:50%;
+				@include mobile {
+					float:none;
+					padding:10px 0 20px;
+					width:100%;
+				}
 				.product-image {
 					display:block;
 					img {

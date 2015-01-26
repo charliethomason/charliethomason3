@@ -72,6 +72,9 @@ article.blog-item {
 				}
 			}
 		}
+		@include mobile {
+			display:none;
+		}
 	}
 }
 article.blog-single {
@@ -118,20 +121,32 @@ article.blog-single {
 			font-weight:bold;
 			line-height:24px;
 			padding:20px 0 5px;
+			@include mobile {
+				margin:0 10px;
+			}
 		}
 		ul {
 			@include mid500;
 			list-style:square outside;
 			padding:10px 0 10px 20px;
+			@include mobile {
+				padding:10px 10px 10px 30px;
+			}
 		}
 		ol {
 			@include mid500;
 			list-style:upper-roman outside;
 			padding:10px 0 10px 25px;
+			@include mobile {
+				padding:10px 10px 10px 35px;
+			}
 		}
 		p {
 			@include mid500;
 			padding:10px 0;
+			@include mobile {
+				padding:10px;
+			}
 		}
 		.post-image {
 			img {

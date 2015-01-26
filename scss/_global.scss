@@ -298,15 +298,28 @@ nav.page-nav {
 	background-color:$slate;
 	color:$offwhite;
 	padding:20px;
+	@include mobile {
+		padding:10px;
+	}
 	.prev {
 		float:left;
 		width:49%;
+		@include mobile {
+			float:none;
+			width:100%;
+		}
 	}
 	.next {
 		float:right;
 		margin-left:2%;
 		text-align:right;
 		width:49%;
+		@include mobile {
+			float:none;
+			margin-left:0;
+			margin-top:10px;
+			width:100%;
+		}
 	}
 	a {
 		@include sans;
