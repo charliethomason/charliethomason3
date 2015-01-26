@@ -19,26 +19,23 @@ body {
 		line-height:1;
 		margin:0 auto;
 		text-align:center;
+		text-indent:-9999px;
 		a {
 			@include nounderline;
-			color:#fff;
+			background:url('images/ct-logo-02.png') no-repeat scroll 0 0 transparent;
 			display:block;
-			font-size:36px;
-			text-shadow:0 2px 0 #000;
-			.first-name {
-				@include imfell;
-			}
-			.last-name {
-				@include imfell;
-			}
-			&:hover, &:focus {
-				color:$offwhite;
+			height:72px;
+			margin:0 auto;
+			width:500px;
+			@include retina {
+				background-image:url('images/ct-logo-02-2x.png');
+				background-size:500px 72px;
 			}
 		}
 	}
 }
 #main-nav {
-	padding:10px 0 0;
+	padding:5px 0 0;
 	text-align:center;
 	width:100%;
 	ul {
@@ -48,6 +45,9 @@ body {
 			vertical-align: middle;
 			&:first-child {
 				margin-left:0;
+				a {
+					padding-left:0;
+				}
 			}
 			a {
 				@include imfell;

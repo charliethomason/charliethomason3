@@ -13,7 +13,7 @@
 <header id="header">
 	<div class="headwrap">
 		<h1>
-			<a href="<?php echo get_option('home'); ?>"><span class="first-name">Charlie</span> <span class="last-name">Thomason</span></a>
+			<a href="<?php echo get_option('home'); ?>">Charlie Thomason</a>
 		</h1>
 
 		<nav id="main-nav">
