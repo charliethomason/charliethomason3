@@ -140,6 +140,19 @@ body {
     background-size: 500px 72px;
   }
 }
+@media (max-width: 840px) {
+  #header h1 a {
+    background-image: url("images/ct-logo-02-mobile.png");
+    background-size: 300px 43px;
+    height: 43px;
+    width: 300px;
+  }
+}
+@media (max-width: 840px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 840px) and (min-resolution: 192dpi) {
+  #header h1 a {
+    background-image: url("images/ct-logo-02-mobile2x.png");
+  }
+}
 
 #main-nav {
   padding: 5px 0 0;
@@ -224,7 +237,7 @@ body {
     left: -9999px;
     top: -9999px;
     text-align: center;
-    width: 320px;
+    width: 100%;
   }
   #main-nav ul.shown {
     left: 0;
