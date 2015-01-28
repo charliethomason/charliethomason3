@@ -795,7 +795,6 @@ article.blog-item a.blog-thumb:hover, article.blog-item a.blog-thumb:focus {
 article.blog-item a.blog-thumb img {
   display: block;
   height: auto;
-  max-width: 100%;
 }
 article.blog-item .info {
   color: #222;
