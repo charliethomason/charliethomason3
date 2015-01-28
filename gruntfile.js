@@ -13,7 +13,7 @@ module.exports = function(grunt) {
 		cssmin: {
 			global: {
 				options: {
-					banner: '/*\nTheme Name: Charlie Thomason 3.0\nTheme URI: http://www.charliethomason.com\nDescription: A WordPress theme for CharlieThomason.com The Website of Charlie Thomason. Do not reuse without permission.\nAuthor: Charlie Thomason\nAuthor URI: http://www.charliethomason.com\nVersion: 3.0\n*/'
+					banner: '/*\nTheme Name: Charlie Thomason 3.5\nTheme URI: http://www.charliethomason.com\nDescription: A WordPress theme for CharlieThomason.com The Website of Charlie Thomason. Do not reuse without permission.\nAuthor: Charlie Thomason\nAuthor URI: http://www.charliethomason.com\nVersion: 3.5\n*/'
 				},
 				files: {
 					'style.min.css': ['style.css']
