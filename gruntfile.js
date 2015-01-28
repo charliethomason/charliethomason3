@@ -65,7 +65,7 @@ module.exports = function(grunt) {
 					authKey: 'key-charliethomason'
 				},
 				src: '_prod/charliethomason',
-				dest: '/public_html/wp-content/themes/charliethomason3',
+				dest: '/public_html/wp-content/themes/charliethomason3-5',
 				exclusions: ['.DS_Store', 'Thumbs.db', '**/.DS_Store', '**/Thumbs.db', 'style.css.map']
 			}
 		}
