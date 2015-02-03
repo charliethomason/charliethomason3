@@ -520,6 +520,17 @@ hr {
   text-align: center;
 }
 
+.fancybox-wrap .fancybox-title-float-wrap {
+  bottom: auto;
+  margin-bottom: 0;
+  top: 100%;
+}
+.fancybox-wrap .fancybox-title-float-wrap .child {
+  font-family: Helvetica, Arial, sans-serif;
+  line-height: 20px;
+  white-space: normal;
+}
+
 #homepage #intro-wrap {
   padding: 0 10px;
 }
@@ -703,6 +714,9 @@ article.art-single .description .gallery .gallery-item .gallery-icon a img {
   max-width: 100%;
 }
 article.art-single .description .gallery .gallery-item .gallery-caption {
+  display: none;
+}
+article.art-single .description .gallery br {
   display: none;
 }
 article.art-single .description p {

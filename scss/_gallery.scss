@@ -69,6 +69,9 @@ article.art-single {
 					display:none;
 				}
 			}
+			br {
+				display:none;
+			}
 		}
 		p {
 			@include mid500;

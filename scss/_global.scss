@@ -360,3 +360,15 @@ hr {
 	padding:0 0 20px;
 	text-align:center;
 }
+.fancybox-wrap {
+	.fancybox-title-float-wrap {
+		bottom:auto;
+		margin-bottom:0;
+		top:100%;
+		.child {
+			@include sans;
+			line-height:20px;
+			white-space:normal;
+		}
+	}
+}
