@@ -26,7 +26,7 @@
 					<a href="/about">About</a>
 				</li>
 				<li<?php if (is_page_template('art.php') || is_singular('art') || is_tag()) { ?> class="active"<?php } ?>>
-					<a href="/gallery">Art</a>
+					<a href="/gallery">Gallery</a>
 				</li>
 				<li<?php if (is_home() || is_singular('post') || is_category()) { ?> class="active"<?php } ?>>
 					<a href="/blog">Blog</a>

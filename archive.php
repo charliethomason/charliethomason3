@@ -7,9 +7,6 @@
 		<?php $cat = get_term_by('name', single_cat_title('',false), 'category'); ?>
 		<h2 class="hashtag"><a href="<?php $cat->slug; ?>"><?php single_cat_title(); ?></a></h2>
 		<p class="return-link"><a href="/blog">&laquo; Return to Main Blog</a></p>
-		<?php if (is_category('Recycled Film')) { ?>
-		<p class="about-rf">RecycledFilm.net was a popular movie blog that I wrote, designed, and developed from 2006 til 2009, and again from 2011 til 2012. The "Recycled Film" category on this blog offers some of the best reviews and essays from the old site, as well as new ones.</p>
-		<?php } ?>
 	<?php /* If this is a tag archive */ } elseif( is_tag() ) { ?>
 		<?php $tag = get_term_by('name', single_tag_title('',false), 'tag'); ?>
 		<h2 class="hashtag"><a href="<?php $tag->slug ?>"><?php single_tag_title(); ?></a></h2>
