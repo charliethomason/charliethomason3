@@ -116,6 +116,18 @@ body {
 					}
 				}
 			}
+			&#social-tumblr {
+				margin-left:10px;
+				a {
+					background: url('images/tumblr01.png') no-repeat scroll left bottom transparent;
+					height: 24px;
+					width: 24px;	
+					@include retina {
+						background-image: url('images/tumblr01-48.png');
+						background-size: 24px 24px;
+					}
+				}
+			}
 		}
 	}
 	@include mobile {

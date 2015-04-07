@@ -225,6 +225,20 @@ body {
     background-size: 24px 24px;
   }
 }
+#main-nav ul li#social-tumblr {
+  margin-left: 10px;
+}
+#main-nav ul li#social-tumblr a {
+  background: url("images/tumblr01.png") no-repeat scroll left bottom transparent;
+  height: 24px;
+  width: 24px;
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  #main-nav ul li#social-tumblr a {
+    background-image: url("images/tumblr01-48.png");
+    background-size: 24px 24px;
+  }
+}
 @media (max-width: 840px) {
   #main-nav {
     position: relative;
@@ -679,6 +693,11 @@ article.art-single .description .post-image a img {
   display: block;
   height: auto;
   max-width: 100%;
+}
+article.art-single .description .iframe-wrap iframe {
+  height: auto !important;
+  max-width: 100%;
+  width: auto !important;
 }
 article.art-single .description .gallery {
   margin: 0 auto;

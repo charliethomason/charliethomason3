@@ -43,6 +43,13 @@ article.art-single {
 				}
 			}
 		}
+		.iframe-wrap {
+			iframe {
+				height:auto !important;
+				max-width:100%;
+				width:auto !important;
+			}
+		}
 		.gallery {
 			@include clearfix;
 			@include mid500;

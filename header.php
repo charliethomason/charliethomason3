@@ -36,6 +36,7 @@
 				</li>
 				<li class="social-icon" id="social-twitter"><a href="http://twitter.com/charliethomason" alt="Twitter" rel="nofollow" target="_blank" title="Twitter">Twitter</a></li>
 				<li class="social-icon" id="social-instagram"><a href="http://instagram.com/charliethomason" alt="Instagram" rel="nofollow" target="_blank" title="Instagram">Instagram</a></li>
+				<li class="social-icon" id="social-tumblr"><a href="http://charliethomason.tumblr.com" alt="Tumblr" rel="nofollow" target="_blank" title="Tumblr">Tumblr</a></li>
 			</ul>
 		</nav>
 
