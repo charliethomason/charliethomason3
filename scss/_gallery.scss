@@ -44,10 +44,17 @@ article.art-single {
 			}
 		}
 		.iframe-wrap {
+			height:0;
+			overflow:hidden;
+			padding:30px 0 56.25%;
+			position: relative;
 			iframe {
-				height:auto !important;
+				height:100% !important;
+				left:0;
 				max-width:100%;
-				width:auto !important;
+				position:absolute;
+				top:0;
+				width:100% !important;
 			}
 		}
 		.gallery {

@@ -694,10 +694,19 @@ article.art-single .description .post-image a img {
   height: auto;
   max-width: 100%;
 }
+article.art-single .description .iframe-wrap {
+  height: 0;
+  overflow: hidden;
+  padding: 30px 0 56.25%;
+  position: relative;
+}
 article.art-single .description .iframe-wrap iframe {
-  height: auto !important;
+  height: 100% !important;
+  left: 0;
   max-width: 100%;
-  width: auto !important;
+  position: absolute;
+  top: 0;
+  width: 100% !important;
 }
 article.art-single .description .gallery {
   margin: 0 auto;
